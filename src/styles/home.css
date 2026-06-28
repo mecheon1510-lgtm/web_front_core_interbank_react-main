@@ -1,27 +1,26 @@
 /* ============================================================
-   Landing pública — Banco Andino
-   Paleta inspirada en la manta andina (textil multicolor):
-   rojo · magenta · turquesa · naranja · amarillo · verde · morado
+   Landing pública — Banco Interbank
+   Paleta moderna: Azul oscuro · Verde · Blanco · Grises
    ============================================================ */
 .home {
-  --rojo: #e2132b;
-  --magenta: #e6398b;
-  --turquesa: #00a9a5;
-  --naranja: #f7941e;
-  --amarillo: #fbc02d;
-  --verde: #4caf50;
-  --morado: #8e24aa;
-  --azul: #29b6f6;
+  --rojo: #003D7A;
+  --magenta: #0052B3;
+  --turquesa: #00B84D;
+  --naranja: #1976D2;
+  --amarillo: #20C997;
+  --verde: #00B84D;
+  --morado: #003D7A;
+  --azul: #0052B3;
 
-  --home-text: #2b2b3a;
-  --home-soft: #6b6b7b;
+  --home-text: #1A1A1A;
+  --home-soft: #757575;
 
   /* Franja Interbank — gradiente azul a verde */
   --franja: linear-gradient(90deg, #003D7A, #00B84D);
 
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   color: var(--home-text);
-  background: #fff;
+  background: #FFFFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -52,19 +51,19 @@
   gap: 12px;
   font-weight: 800;
   font-size: 20px;
-  color: var(--rojo);
+  color: #003D7A;
   letter-spacing: -0.5px;
 }
 .home-logo__mark {
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--magenta), var(--rojo) 60%, var(--naranja));
+  background: linear-gradient(135deg, #003D7A, #00B84D);
   display: grid;
   place-items: center;
   color: #fff;
   font-size: 20px;
-  box-shadow: 0 4px 12px rgba(226, 19, 43, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 61, 122, 0.35);
 }
 .home-nav__links {
   display: flex;
@@ -78,15 +77,15 @@
   text-decoration: none;
 }
 .home-nav__links a:hover {
-  color: var(--rojo);
+  color: #003D7A;
 }
 
-/* Botón "Banco Andino por Internet" */
+/* Botón "Interbank por Internet" */
 .btn-banca {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--rojo);
+  background: #00B84D;
   color: #fff;
   border: none;
   padding: 11px 22px;
@@ -94,13 +93,13 @@
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 6px 16px rgba(226, 19, 43, 0.35);
+  box-shadow: 0 6px 16px rgba(0, 184, 77, 0.35);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   text-decoration: none;
 }
 .btn-banca:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(226, 19, 43, 0.45);
+  box-shadow: 0 10px 22px rgba(0, 184, 77, 0.45);
   color: #fff;
   text-decoration: none;
 }
@@ -122,8 +121,8 @@
 }
 .home-hero__eyebrow {
   display: inline-block;
-  background: #fde7ef;
-  color: var(--magenta);
+  background: #E8F5E9;
+  color: #00B84D;
   font-weight: 700;
   font-size: 13px;
   padding: 6px 14px;
@@ -137,7 +136,7 @@
   letter-spacing: -1px;
 }
 .home-hero h1 .acento {
-  background: linear-gradient(90deg, var(--rojo), var(--magenta), var(--morado));
+  background: linear-gradient(90deg, #003D7A, #00B84D, #20C997);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -157,8 +156,8 @@
   display: inline-flex;
   align-items: center;
   background: #fff;
-  color: var(--rojo);
-  border: 2px solid var(--rojo);
+  color: #003D7A;
+  border: 2px solid #003D7A;
   padding: 13px 28px;
   border-radius: 999px;
   font-size: 15px;
@@ -167,28 +166,18 @@
   text-decoration: none;
 }
 .btn-outline:hover {
-  background: #fff5f6;
+  background: #E8F5E9;
   text-decoration: none;
 }
 
-/* Arte del hero: mosaico de colores de la manta */
+/* Arte del hero: gradiente Interbank */
 .home-hero__art {
   position: relative;
   height: 380px;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 24px 60px rgba(142, 36, 170, 0.28);
-  background: conic-gradient(
-    from 45deg,
-    var(--magenta),
-    var(--naranja),
-    var(--amarillo),
-    var(--verde),
-    var(--turquesa),
-    var(--morado),
-    var(--rojo),
-    var(--magenta)
-  );
+  box-shadow: 0 24px 60px rgba(0, 61, 122, 0.28);
+  background: linear-gradient(135deg, #003D7A 0%, #0052B3 25%, #1976D2 50%, #00B84D 75%, #20C997 100%);
 }
 .home-hero__art::after {
   content: '';
@@ -221,7 +210,7 @@
 /* ---------- Sección productos ---------- */
 .home-section {
   max-width: 1180px;
-  margin: 0 auto;
+  margin:#003D7A
   padding: 40px;
 }
 .home-section__head {
@@ -242,8 +231,19 @@
   width: 90px;
   height: 5px;
   border-radius: 999px;
+  color: #003D7A;
+}
+.home-section__head p {
+  color: var(--home-soft);
+  font-size: 17px;
+  margin: 0;
+}
+.home-section__head .raya {
+  width: 90px;
+  height: 5px;
+  border-radius: 999px;
   margin: 14px auto 0;
-  background: var(--franja);
+  background: linear-gradient(90deg, #003D7A, #00B84D);
   background-size: 90px;
 }
 
@@ -269,7 +269,7 @@
   left: 0;
   right: 0;
   height: 6px;
-  background: var(--barra, var(--rojo));
+  background: var(--barra, #00B84D);
 }
 .producto-card:hover {
   transform: translateY(-6px);
@@ -298,7 +298,7 @@
 .producto-card__tea {
   font-size: 13px;
   font-weight: 700;
-  color: var(--barra, var(--rojo));
+  color: var(--barra, #00B84D);
 }
 .producto-card__tea small {
   display: block;
@@ -322,13 +322,13 @@
 }
 .flujo-chip {
   background: #fff;
-  border: 1px solid #f0eef2;
-  border-top: 4px solid var(--chip, var(--rojo));
+  border: 1px solid #E0E0E0;
+  border-top: 4px solid var(--chip, #00B84D);
   border-radius: 12px;
   padding: 12px 16px;
   font-weight: 700;
   font-size: 13px;
-  box-shadow: 0 6px 18px rgba(43, 43, 58, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 61, 122, 0.06);
   white-space: nowrap;
 }
 .flujo-chip small {
@@ -375,8 +375,8 @@
   border-bottom: 1px solid #f0e6ea;
 }
 .home-header__chip {
-  background: #fde7ef;
-  color: var(--magenta);
+  background: #E8F5E9;
+  color: #00B84D;
   font-weight: 700;
   font-size: 12px;
   padding: 6px 14px;
@@ -423,7 +423,7 @@
   position: relative;
   display: flex;
   color: #fff;
-  background: linear-gradient(150deg, #8e24aa 0%, #e2132b 52%, #f7941e 100%);
+  background: linear-gradient(150deg, #003D7A 0%, #0052B3 52%, #00B84D 100%);
   background-size: 180% 180%;
   animation: splitInRight 0.7s cubic-bezier(0.22, 1, 0.36, 1) both,
     lpShift 18s ease 0.7s infinite;
@@ -632,7 +632,7 @@
   justify-content: center;
   gap: 8px;
   background: #fff;
-  color: var(--rojo);
+  color: #00B84D;
   border: none;
   padding: 14px;
   border-radius: 11px;
@@ -717,19 +717,19 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  background: linear-gradient(100deg, #fff5f7, #ffffff 70%);
-  border: 1px solid #f3d9e2;
-  border-left: 5px solid var(--magenta);
+  background: linear-gradient(100deg, #E8F5E9, #FFFFFF 70%);
+  border: 1px solid #C8E6C9;
+  border-left: 5px solid #00B84D;
   border-radius: 14px;
   padding: 16px 22px;
-  box-shadow: 0 6px 18px rgba(230, 57, 139, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 184, 77, 0.08);
 }
 .home-motiv__icon {
   width: 46px;
   height: 46px;
   border-radius: 12px;
-  background: #fde7ef;
-  color: var(--magenta);
+  background: #E8F5E9;
+  color: #00B84D;
   display: grid;
   place-items: center;
   flex: 0 0 auto;
@@ -739,7 +739,7 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  color: var(--magenta);
+  color: #00B84D;
 }
 .home-motiv__text {
   font-size: 16px;
@@ -775,17 +775,17 @@
 }
 .esencia-card {
   background: #fff;
-  border: 1px solid #f0eef2;
-  border-top: 5px solid var(--barra, var(--rojo));
+  border: 1px solid #E0E0E0;
+  border-top: 5px solid var(--barra, #00B84D);
   border-radius: 18px;
   padding: 28px 26px;
-  box-shadow: 0 8px 24px rgba(43, 43, 58, 0.06);
+  box-shadow: 0 8px 24px rgba(0, 61, 122, 0.06);
   height: 100%;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .esencia-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 22px 48px rgba(43, 43, 58, 0.16);
+  box-shadow: 0 22px 48px rgba(0, 61, 122, 0.16);
 }
 .esencia-card__icon {
   width: 54px;
@@ -794,7 +794,7 @@
   display: grid;
   place-items: center;
   margin-bottom: 16px;
-  background: var(--icon-bg, #fde7ef);
+  background: var(--icon-bg, #E8F5E9);
   transition: transform 0.25s ease;
 }
 .esencia-card:hover .esencia-card__icon {
@@ -914,7 +914,7 @@
 .carrusel__badge {
   align-self: flex-start;
   background: rgba(255, 255, 255, 0.95);
-  color: var(--rojo);
+  color: #00B84D;
   font-weight: 800;
   font-size: 11px;
   letter-spacing: 0.6px;
@@ -994,7 +994,7 @@
 
 /* ---------- Banner banca por internet ---------- */
 .home-banca {
-  background: linear-gradient(120deg, var(--morado), var(--rojo) 55%, var(--naranja));
+  background: linear-gradient(120deg, #003D7A, #00B84D 55%, #20C997);
   color: #fff;
   border-radius: 24px;
   padding: 48px 40px;
@@ -1005,7 +1005,7 @@
   flex-wrap: wrap;
   max-width: 1100px;
   margin: 20px auto 60px;
-  box-shadow: 0 24px 60px rgba(226, 19, 43, 0.28);
+  box-shadow: 0 24px 60px rgba(0, 61, 122, 0.28);
 }
 .home-banca h2 {
   font-size: 30px;
@@ -1019,11 +1019,11 @@
 }
 .btn-banca--blanco {
   background: #fff;
-  color: var(--rojo);
+  color: #00B84D;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 .btn-banca--blanco:hover {
-  color: var(--rojo);
+  color: #00B84D;
 }
 
 /* ---------- Beneficios ---------- */
@@ -1039,7 +1039,7 @@
 .beneficio__num {
   font-size: 34px;
   font-weight: 800;
-  background: linear-gradient(90deg, var(--rojo), var(--magenta));
+  background: linear-gradient(90deg, #003D7A, #00B84D);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1075,7 +1075,7 @@
 
 /* ---------- Testimonios ---------- */
 .home-section--alt {
-  background: #fbf7f9;
+  background: #F5F5F5;
   max-width: none;
 }
 .home-section--alt .home-section__inner {
@@ -1091,8 +1091,8 @@
   background: #fff;
   border-radius: 18px;
   padding: 26px 24px;
-  box-shadow: 0 8px 24px rgba(43, 43, 58, 0.07);
-  border-top: 5px solid var(--barra, var(--rojo));
+  box-shadow: 0 8px 24px rgba(0, 61, 122, 0.07);
+  border-top: 5px solid var(--barra, #00B84D);
 }
 .testimonio__texto {
   font-size: 15px;
@@ -1114,7 +1114,7 @@
   color: #fff;
   font-weight: 800;
   font-size: 16px;
-  background: var(--barra, var(--rojo));
+  background: var(--barra, #00B84D);
 }
 .testimonio__autor strong {
   display: block;
@@ -1136,7 +1136,7 @@
   gap: 16px;
   align-items: flex-start;
   background: #fff;
-  border: 1px solid #f0eef2;
+  border: 1px solid #E0E0E0;
   border-radius: 16px;
   padding: 22px;
 }
@@ -1148,7 +1148,7 @@
   place-items: center;
   font-size: 24px;
   flex: 0 0 auto;
-  background: var(--icon-bg, #fde7ef);
+  background: var(--icon-bg, #E8F5E9);
 }
 .canal h4 {
   margin: 0 0 4px;
@@ -1168,7 +1168,7 @@
 }
 .faq-item {
   background: #fff;
-  border: 1px solid #f0eef2;
+  border: 1px solid #E0E0E0;
   border-radius: 14px;
   margin-bottom: 12px;
   overflow: hidden;
@@ -1189,7 +1189,7 @@
 }
 .faq-item > summary::after {
   content: '+';
-  color: var(--rojo);
+  color: #00B84D;
   font-size: 22px;
   font-weight: 700;
   transition: transform 0.2s ease;

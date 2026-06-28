@@ -122,7 +122,7 @@ a:hover {
 
 .navbar {
   height: 60px;
-  background: linear-gradient(110deg, #8e24aa, #e2132b 55%, #f7941e);
+  background: linear-gradient(110deg, #003D7A, #0052B3 40%, #00B84D);
   color: #fff;
   display: flex;
   align-items: center;
@@ -394,7 +394,7 @@ table.tbl tbody tr:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #8e24aa, #e2132b 50%, #f7941e);
+  background: linear-gradient(135deg, #003D7A, #0052B3 40%, #00B84D);
   position: relative;
 }
 .login-wrap::before {
@@ -423,7 +423,7 @@ table.tbl tbody tr:hover {
 .login-card h1 {
   margin: 0 0 4px;
   font-size: 20px;
-  color: var(--c-primary);
+  color: #003D7A;
 }
 .login-card p {
   margin: 0 0 24px;
